@@ -75,14 +75,15 @@ public class HelloController {
 
     }
 
-    @FXML
+     @FXML
     protected void onClearButtonClick() {
-
+        arrayList.onClear(Clear.Clears());
+        onDraw();
     }
 
     @FXML
     protected void onSearchButtonClick() {
-
+        arrayList.onSearch(Search.Searchs());
     }
 
     @FXML
